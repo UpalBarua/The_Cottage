@@ -1,0 +1,234 @@
+/*##########################
+Global Styles
+##########################*/
+@import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Source+Sans+Pro:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
+
+:root {
+  --acnt-clr: #fed71b;
+  --acnt-ff: "Bebas Neue", cursive;
+  /* --acnt-ff: "PT Sans Narrow", cursive; */
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif !important;
+}
+
+.btn {
+  background: var(--acnt-clr) !important;
+  border: none;
+  color: #000;
+  font-weight: 600;
+}
+
+.btn:hover {
+  opacity: 70%;
+}
+
+.ff-accent {
+  /* font-family: "Bubblegum Sans", cursive; */
+  font-family: var(--acnt-ff);
+}
+
+.dot {
+  color: var(--acnt-clr) !important;
+  font-size: 5rem;
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+/*##########################
+Navigation Bar
+##########################*/
+.navbar {
+  height: 2.75em;
+  background-color: #fff;
+}
+
+.navbar-brand {
+  /* font-family: "Bubblegum Sans", cursive; */
+  font-family: var(--acnt-ff);
+  font-size: 1.35rem !important;
+}
+
+.navbar-brand .dot {
+  font-size: 1.5em;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  font-size: 0.65rem;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  background: var(--acnt-clr);
+  border-radius: 5px;
+}
+
+.reservation {
+  background: var(--acnt-clr) !important;
+  border-radius: 5px !important;
+  margin-left: 0.75em;
+}
+
+/*##########################
+  Welcome section
+##########################*/
+.welcome {
+  background: url("../img/wlc-bg-2.jpg") center center/cover no-repeat;
+  /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.1); */
+}
+
+.welcome .container {
+  padding: 12% 0 !important;
+}
+
+.welcome h1 {
+  /* font-family: "Bubblegum Sans", cursive; */
+  font-family: var(--acnt-ff);
+  color: #000;
+  font-size: 5.5rem;
+}
+
+.welcome h3 {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.welcome .input-group {
+  max-width: 40%;
+}
+
+.input-group-text,
+.input-group-prepend {
+  background: var(--acnt-clr) !important;
+  border-radius: 5px;
+}
+
+/*##########################
+  About Section.
+##########################*/
+.about-img {
+  width: 120%;
+}
+
+#about p {
+  width: 85%;
+}
+
+/*##########################
+  Specials Section.
+##########################*/
+.daily .card:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+}
+
+.full-menu-btn:hover {
+  color: var(--acnt-clr) !important;
+}
+
+/*##########################
+  Locations Section.
+##########################*/
+#locations {
+  background: url("../img/map-bg-1.jpg") center center/cover no-repeat;
+  /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2); */
+}
+
+/*##########################
+  Reviews Section.
+##########################*/
+#reviews h3 {
+  font-weight: 600;
+}
+
+#reviews p {
+  font-size: 0.85rem;
+}
+
+/*##########################
+  Main Menu Section.
+##########################*/
+.left-side {
+  padding-bottom: 89% !important;
+  background: url("../img/menu-side-left.jpg") center center/cover no-repeat;
+  border-radius: 5px;
+}
+
+.right-side {
+  padding-bottom: 89% !important;
+  background: url("../img/menu-side-right-1.jpg") center center/cover no-repeat;
+  border-radius: 5px;
+}
+
+.left-side-2 {
+  padding-bottom: 89% !important;
+  background: url("../img/menu-side-left-2.jpg") center center/cover no-repeat;
+  border-radius: 5px;
+}
+
+/*##########################
+  Footer Section.
+##########################*/
+footer li,
+footer i,
+footer a {
+  padding: 0 0.3em;
+  color: white !important;
+  text-decoration: none;
+}
+
+footer p {
+  font-size: 0.85rem;
+}
+
+footer .bg {
+  background: var(--acnt-clr) !important;
+  font-size: 0.75rem;
+}
+
+/*##########################
+  Media Queries.
+##########################*/
+@media (max-width: 768px) {
+  .navbar {
+    min-height: 3.75em;
+  }
+
+  .welcome h1 {
+    font-size: 3.5rem;
+  }
+
+  .welcome h3 {
+    font-size: 1.75rem;
+  }
+
+  .welcome .input-group {
+    max-width: 100%;
+    padding: 0.85em 0;
+  }
+
+  #about p {
+    width: 100%;
+  }
+
+  .about-img {
+    width: 80%;
+    padding-bottom: 1em;
+  }
+
+  .daily img {
+    width: 100% !important;
+  }
+
+  .left-side,
+  .right-side,
+  .left-side-2 {
+    padding-bottom: 3rem !important;
+  }
+}
